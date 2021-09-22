@@ -23,6 +23,8 @@ export class HomeComponent implements OnInit {
 
   console.log('Nome do Produto: ', this.nomeProduto);
 
+  console.log('O preço do produto é: R$', this.precoProduto);
+
 }
 
   ngOnInit(): void {
