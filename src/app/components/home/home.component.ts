@@ -9,7 +9,7 @@ export class HomeComponent implements OnInit {
 
   // Variaveis tem que ser criadas antes do Constructor
 
-  nomeProduto: string = "Curso de Angular";
+  nomeProduto: string = 'Curso de Angular';
   idProduto: number = 123;
   precoProduto: number = 2.59;
   promocao: boolean = true;
@@ -17,7 +17,10 @@ export class HomeComponent implements OnInit {
   // Template string
   anuncio: string = `O ${this.nomeProduto} está em promoção!`;
 
-  constructor() {}
+  constructor() {
+  // variáveis de string concatenação
+  this.anuncio = 'O ' + this.nomeProduto + ' esta em promoção';
+  }
 
   ngOnInit(): void {
   }
