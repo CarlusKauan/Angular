@@ -29,6 +29,8 @@ export class HomeComponent implements OnInit {
 
   console.log(`A promoção do ${this.nomeProduto} é: ${this.promocao}`);
 
+  console.log(this.anuncio);
+
 }
 
   ngOnInit(): void {
