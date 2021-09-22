@@ -25,6 +25,8 @@ export class HomeComponent implements OnInit {
 
   console.log('O preço do produto é: R$', this.precoProduto);
 
+  console.log(`O id do produto é : ${this.idProduto}`);
+
 }
 
   ngOnInit(): void {
