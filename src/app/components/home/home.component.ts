@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
   // variáveis de string concatenação
   // this.anuncio = 'O ' + this.nomeProduto + ' esta em promoção';
 
+  console.log('Nome do Produto', this.nomeProduto);
 
 }
 
