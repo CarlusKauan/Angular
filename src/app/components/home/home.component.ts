@@ -19,8 +19,10 @@ export class HomeComponent implements OnInit {
 
   constructor() {
   // variáveis de string concatenação
-  this.anuncio = 'O ' + this.nomeProduto + ' esta em promoção';
-  }
+  // this.anuncio = 'O ' + this.nomeProduto + ' esta em promoção';
+
+
+}
 
   ngOnInit(): void {
   }
