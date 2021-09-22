@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   precoProduto: number = 2.59;
   promocao: boolean = true;
 
+
   // Template string
   anuncio: string = `O ${this.nomeProduto} está em promoção!`;
 
@@ -32,6 +33,18 @@ export class HomeComponent implements OnInit {
   console.log(this.anuncio);
 
   console.log(`O ${this.nomeProduto} está em promoção ${this.promocao} com o id ${this.idProduto} mais o preço de R$: ${this.precoProduto}`)
+
+
+  // let, const, var
+
+  let idade = 10;
+  function imprimeIdade(){
+    for(let idade = 30; idade <= 40; idade++){
+      console.log('a idade é ', idade);
+    }
+      console.log('a sua idade final é ',idade);
+  }
+  imprimeIdade();
 
 }
 
