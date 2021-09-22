@@ -31,6 +31,8 @@ export class HomeComponent implements OnInit {
 
   console.log(this.anuncio);
 
+  console.log(`O ${this.nomeProduto} está em promoção ${this.promocao} com o id ${this.idProduto} mais o preço de R$: ${this.precoProduto}`)
+
 }
 
   ngOnInit(): void {
