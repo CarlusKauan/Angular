@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  // Aula 10 - TypeScript 22/09/21
+
   // Variaveis tem que ser criadas antes do Constructor
 
   nomeProduto: string = 'Curso de Angular';
@@ -36,7 +38,6 @@ export class HomeComponent implements OnInit {
 
 
   // let, const, var
-
   let idade = 10;
   function imprimeIdade(){
     for(let idade = 30; idade <= 40; idade++){
@@ -45,7 +46,6 @@ export class HomeComponent implements OnInit {
       console.log('a sua idade final é ',idade);
   }
   imprimeIdade();
-
 }
 
   ngOnInit(): void {
