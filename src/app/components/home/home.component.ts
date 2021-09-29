@@ -102,22 +102,22 @@ export class HomeComponent implements OnInit {
     pois foi declarada como let dentro do 'if(true){...}'
     */
 
-    let a = 1;
-    function bar(){
-      console.log('variável a: ', a);
-      let b = 2;
-      if(true) {
-        let c = 3;
-        let a = 4;
-        console.log('Variável a dentro do if', a);
-        console.log('Variável b dentro do if', b);
-        console.log('Variável c dentro do if: ', c);
-      }
-      console.log('Variável a dentro da função: ',a);
-      console.log('Variável b dentro da função: ', b);
-    }
+    // let a = 1;
+    // function bar(){
+    //   console.log('variável a: ', a);
+    //   let b = 2;
+    //   if(true) {
+    //     let c = 3;
+    //     let a = 4;
+    //     console.log('Variável a dentro do if', a);
+    //     console.log('Variável b dentro do if', b);
+    //     console.log('Variável c dentro do if: ', c);
+    //   }
+    //   console.log('Variável a dentro da função: ',a);
+    //   console.log('Variável b dentro da função: ', b);
+    // }
     // console.log(c);
-    bar();
+    // bar();
 
 
     // 5 - Qual o resultado das variáveis
@@ -140,12 +140,14 @@ export class HomeComponent implements OnInit {
     // }
     // console.log('Variável a fora do if: ', a);
     // console.log('Variavel b fora do if: ', b);
+
+
+  // aula 11 - 29/09/21
+
+
+
+
 }
-
-
-
-
-
   ngOnInit(): void {
   }
 
