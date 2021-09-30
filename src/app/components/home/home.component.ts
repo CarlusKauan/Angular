@@ -3,63 +3,65 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-
   // Aula 10 - TypeScript 22/09/21
 
   // Variaveis tem que ser criadas antes do Constructor
 
   nomeProduto: string = 'Curso de Angular';
-  idProduto: number = 123;
-  precoProduto: number = 2.59;
+  idProduto: number = 3.5;
+  precoProduto: number = 2.51;
   promocao: boolean = true;
-
+  foto: string = 'assets/img/crud.png';
+  dataValidade: string = '2021/12/31';
 
   // Template string
   anuncio: string = `O ${this.nomeProduto} está em promoção!`;
 
   constructor() {
-  // variáveis de string concatenação
-  // this.anuncio = 'O ' + this.nomeProduto + ' esta em promoção';
+    // variáveis de string concatenação
+    // this.anuncio = 'O ' + this.nomeProduto + ' esta em promoção';
 
-  console.log('Nome do Produto: ', this.nomeProduto);
+    console.log('Nome do Produto: ', this.nomeProduto);
 
-  console.log('O preço do produto é: R$', this.precoProduto);
+    console.log('O preço do produto é: R$', this.precoProduto);
 
-  console.log(`O id do produto é : ${this.idProduto}`);
+    console.log(`O id do produto é : ${this.idProduto}`);
 
-  console.log(`A promoção do ${this.nomeProduto} é: ${this.promocao}`);
+    console.log(`A promoção do ${this.nomeProduto} é: ${this.promocao}`);
 
-  console.log(this.anuncio);
+    console.log(this.anuncio);
 
-  console.log(`O ${this.nomeProduto} está em promoção ${this.promocao} com o id ${this.idProduto} mais o preço de R$: ${this.precoProduto}`);
+    console.log(
+      `O ${this.nomeProduto} está em promoção ${this.promocao} com o id ${this.idProduto} mais o preço de R$: ${this.precoProduto}`
+    );
 
-  // let, const, var
-  let idade = 10;
-  function imprimeIdade(){
-    for(let idade = 30; idade <= 40; idade++){
-      console.log('a idade é ', idade);
+    // let, const, var
+    let idade = 10;
+    function imprimeIdade() {
+      for (let idade = 30; idade <= 40; idade++) {
+        console.log('a idade é ', idade);
+      }
+      console.log('a sua idade final é ', idade);
     }
-      console.log('a sua idade final é ',idade);
-  }
-  imprimeIdade();
+    imprimeIdade();
 
-  // Exercícios
-  // 1 - variavel = 10; outra_variavel = 30; sem nenhum erro !.
-  // 2 - da erro poís a let foi duplicada.
-  var variavel = 0;
-  var variavel = 10;
-  console.log('variável', variavel);
-  function funcao() {
-    var outra_variavel = 20;
-    var outra_variavel = 30;
-    console.log('outra variável: ', outra_variavel);
-  }
-  funcao();
+    // Exercícios
+    // 1 - variavel = 10; outra_variavel = 30; sem nenhum erro !.
+    // 2 - da erro poís a let foi duplicada.
+    var variavel = 0;
+    var variavel = 10;
+    console.log('variável', variavel);
+    function funcao() {
+      var outra_variavel = 20;
+      var outra_variavel = 30;
+      console.log('outra variável: ', outra_variavel);
+    }
+    funcao();
 
-  // 3 - Qual o resultado das variáveis
+    // 3 - Qual o resultado das variáveis
     /*
     a.Variável a dentro do if: 50
     b.Variável b dentro do if: 60
@@ -86,7 +88,6 @@ export class HomeComponent implements OnInit {
     // bar();
     // console.log('Variável a fora da função', a);
     // console.log('Variável b fora da função', b);
-
 
     // 4 - Qual o resultado das variáveis:
     /*
@@ -119,7 +120,6 @@ export class HomeComponent implements OnInit {
     // console.log(c);
     // bar();
 
-
     // 5 - Qual o resultado das variáveis
 
     /*
@@ -141,14 +141,7 @@ export class HomeComponent implements OnInit {
     // console.log('Variável a fora do if: ', a);
     // console.log('Variavel b fora do if: ', b);
 
-
-  // aula 11 - 29/09/21
-
-
-
-
-}
-  ngOnInit(): void {
+    // aula 11 - 29/09/21
   }
-
+  ngOnInit(): void {}
 }
