@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarProdutosComponent implements OnInit {
 
+
   //Criando listas arrays
+  //Sempre criar antes do construtor
   listaStrings: string[] = ['Primeiro','Segundo','Terceiro'];
-  listaNumber: number[] = [1,2,3]
+  listaNumber: number[] = [1,2,3];
+
+  //Criando array de objeto
+  objetoModelo = {
+    nome: 'Carlos',
+    idade: 17,
+    altura: 1.69,
+    graduado:false
+  };
 
   constructor() {
     //Laço faça
@@ -17,6 +27,12 @@ export class ListarProdutosComponent implements OnInit {
       //Exibir posições
       console.log(item);
     }
+    for (const item of this.listaNumber){
+      //Exibir posições
+      console.log(item);
+    }
+
+    console.log(this.objetoModelo);
   }
 
   ngOnInit(): void {
