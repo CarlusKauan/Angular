@@ -32,7 +32,11 @@ export class ListarProdutosComponent implements OnInit {
       console.log(item);
     }
 
+    //Chamando propriedades das Arrays
     console.log(this.objetoModelo);
+    console.log(this.objetoModelo.nome);
+    console.log(this.objetoModelo.idade);
+    console.log(this.objetoModelo.altura);
   }
 
   ngOnInit(): void {
