@@ -19,11 +19,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>Curso de Angular</td>
-        <td>10/11/21</td>
-        <td>R$ 750,00</td>
+      <tr *ngFor = "let prod of listaProdutos">
+        <td>{{this.prod.id}}</td>
+        <td>{{this.prod.nome}}</td>
+        <td>{{this.prod.Validade}}</td>
+        <td>{{this.prod.precoProduto | currency: "BRL" }}</td>
         <td>
           <button class="btn btn-warning">
             <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -31,9 +31,12 @@
           <button class="btn btn-danger ml-2">
             <i class="fa fa-trash" aria-hidden="true"></i>
           </button>
-          <!-- <button class="btn btn-success ml-2">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-          </button> -->
+          <button class="btn btn-success ml-2">
+            <i class="fa fa-archive" aria-hidden="true"></i>
+          </button>
+          <button class="btn btn-primary ml-2">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+          </button>
         </td>
       </tr>
     </tbody>

@@ -21,6 +21,16 @@ export class ListarProdutosComponent implements OnInit {
     graduado:false
   };
 
+  //Criando uma array com um objeto interno
+  //Sempre criar antes do construtor
+  listaProdutos: any = [
+    {nome:'Curso de angular',precoProduto: 35.36,Validade:'31/08/2021',id:1},
+    {nome:'Curso de ionic', precoProduto: 50.36,Validade:'27/09/2021',id:2, promocao:true},
+    {nome:'Curso de Kotlin', precoProduto: 80.36,Validade:'27/10/2021',id:3},
+    {nome:'Curso de SQL', precoProduto: 100.50, Validade:'27/11/2021',id:4},
+    {nome:'Curso de JavaScript', precoProduto: 180, Validade:'30/12/2021', id:5, promocao:true}
+  ]
+
   constructor() {
     //Laço faça
     for (let item of this.listaStrings){
@@ -37,6 +47,8 @@ export class ListarProdutosComponent implements OnInit {
     console.log(this.objetoModelo.nome);
     console.log(this.objetoModelo.idade);
     console.log(this.objetoModelo.altura);
+
+
   }
 
   ngOnInit(): void {
