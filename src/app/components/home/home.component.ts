@@ -41,12 +41,13 @@ export class HomeComponent implements OnInit {
     // let, const, var
     let idade = 10;
     function imprimeIdade() {
-      for (let idade = 30; idade <= 40; idade++) {
+      for (let idade = 20; idade <= 25; idade++) {
         console.log('a idade é ', idade);
       }
       console.log('a sua idade final é ', idade);
     }
     imprimeIdade();
+
 
     // Exercícios
     // 1 - variavel = 10; outra_variavel = 30; sem nenhum erro !.
