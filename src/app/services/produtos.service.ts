@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -8,7 +9,8 @@ export class ProdutosService {
   //URL para buscar a informação no backend.
   private URL: string = 'http://localhost:3000/produtos';
 
-  constructor() { }
+  //Criar Váriavel.
+  constructor(private http: HttpClient) { }
 
   //Fazer nosso método.
   buscarTodos() {
