@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { get } from 'http';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,8 @@ export class ProdutosService {
 
   //Fazer nosso método.
   buscarTodos() {
-
+    //Retornar e listar com Get.
+    return this.http.get(this.URL);
 
   }
 }
