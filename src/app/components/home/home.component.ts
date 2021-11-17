@@ -6,6 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+
+  listagemProduto: any = [
+    {Nome:'Curso de JavaScript', Preco: 40.00, validade: '2021-12-21' },
+    {Nome:'Curso de Angular', Preco: 20.00, validade: '2021-12-19' },
+    {Nome:'Curso de TypeScript', Preco: 80.00, validade: '2021-11-21' },
+    {Nome:'Curso de Java', Preco: 30.00, validade: '2021-09-01' },
+    {Nome:'Curso de Ionic', Preco: 25.00, validade: '2021-07-12' },
+    {Nome:'Curso de Kotlin', Preco: 10.00, validade: '2021-09-15' }
+  ]
+
+
+
   // Aula 10 - TypeScript 22/09/21
 
   // Variaveis tem que ser criadas antes do Constructor

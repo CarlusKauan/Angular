@@ -1,18 +1,70 @@
 <!-- Título -->
 <h1>Seja bem vindo ao curso de Angular!</h1>
 <h4 class="text-danger">{{anuncio}}</h4>
-<br />
-<div class="card" style="width: 18rem;">
-  <img [src]="foto" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{nomeProduto | uppercase}}</h5>
-    <span *ngIf="promocao; else elseBlock" class="badge badge-success">Promoção</span>
-    <ng-template #elseBlock>
-      <span class="badge badge-primary">Aproveite</span>
-    </ng-template>
-    <p class="card-text">Indentificação: {{idProduto | number: '1.0-0'}} <br />
-      Validade: {{dataValidade | date : 'shortDate'}}
-    <p>
-        <a href="#" class="btn btn-primary">{{precoProduto | currency:'BRL'}}</a>
+
+<div class="row">
+  <div class="col">
+    <app-card-produto
+    [foto]="foto"
+    [nomeProduto]="nomeProduto"
+    [promocao]="promocao"
+    [idProduto]="idProduto"
+    [dataValidade]="dataValidade"
+    [precoProduto]="precoProduto"
+  ></app-card-produto>
+  </div> <!-- .col -->
+
+  <div class="col">
+    <app-card-produto
+    foto="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAqwOg73TBIagSaQNd--Tf7VUsA3KMrrGnQ&usqp=CAU"
+    nomeProduto="Kyrie 6"
+    [promocao]="false"
+    [idProduto]="15"
+    dataValidade="2021-12-20"
+    [precoProduto]="1500.00"
+  ></app-card-produto>
+  </div> <!-- .col -->
+
+  <div class="col">
+    <app-card-produto
+    foto="https://imgcentauro-a.akamaihd.net/230x230/94860215.jpg"
+    nomeProduto="Bola spalding"
+    [promocao]="false"
+    [idProduto]="15"
+    dataValidade="2021-12-20"
+    [precoProduto]="120.00"
+  ></app-card-produto>
+  </div> <!-- .col -->
+</div> <!-- .row -->
+
+ <div class="col">
+   <div class="card shadow m-3" style="width: 32rem">
+    <h1 class="my-3 text-warning row justify-content-center align-items-center">
+      Produtos
+    </h1>
+    <table class="table table-responsive table-striped">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Preço</th>
+          <th>Validade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let produt of listagemProduto" >
+          <td>{{produt.Nome}}</td>
+          <td>{{produt.Preco | currency: 'BRL'}}</td>
+          <td>{{produt.validade | date: 'shortDate'}}</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-</div>
+ </div>
+
+
+
+
+
+
+
