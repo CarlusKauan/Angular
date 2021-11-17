@@ -9,4 +9,10 @@ export class ProdutosService {
   private URL: string = 'http://localhost:3000/produtos';
 
   constructor() { }
+
+  //Fazer nosso método.
+  buscarTodos() {
+
+
+  }
 }
