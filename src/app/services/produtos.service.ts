@@ -1,6 +1,6 @@
+import { IProduto } from '../model/IProduto.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { get } from 'http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -15,9 +15,9 @@ export class ProdutosService {
   constructor(private http: HttpClient) { }
 
   //Fazer nosso método.
-  buscarTodos() : Observable<any> {
+  buscarTodos() : Observable<IProduto[]> {
     //Retornar e listar com Get.
-    return this.http.get(this.URL);
+    return this.http.get<IProduto[]>(this.URL);
 
 
   }
