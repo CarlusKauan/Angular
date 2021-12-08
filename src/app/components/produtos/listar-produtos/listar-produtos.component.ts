@@ -54,4 +54,15 @@ export class ListarProdutosComponent implements OnInit {
     })
   };
 
+  deletar(produto: IProduto) : void{
+    this.produtosService.excluir(produto.id!).subscribe(() => {
+      this.produtosService.exibirMensagem(
+        'Sistema',
+        `${produto.nome} foi excluido com sucesso. ID: ${produto.id}`,
+        'toast-warning'
+      );
+      this.carregarProdutos();
+    });
+
+  }
 }

@@ -21,6 +21,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 
+import { AtualizarProdutoComponent } from './components/produtos/atualizar-produto/atualizar-produto.component';
+
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
 registerLocaleData(localePt);
 
 @NgModule({
@@ -30,7 +34,8 @@ registerLocaleData(localePt);
     FooterComponent,
     HomeComponent,
     ListarProdutosComponent,
-    CadastrarProdutosComponent
+    CadastrarProdutosComponent,
+    AtualizarProdutoComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +45,7 @@ registerLocaleData(localePt);
     HttpClientModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
+    SweetAlert2Module.forRoot(),
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR' },

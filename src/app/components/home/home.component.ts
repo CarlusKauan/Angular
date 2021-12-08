@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
   dataValidade: string = '2021/12/31';
 
   // Template string
-  anuncio: string = `O ${this.nomeProduto} está em promoção!`;
+  anuncio: string = `Fique de olho, mangás estão em promoção!`;
 
   constructor() {
     // variáveis de string concatenação

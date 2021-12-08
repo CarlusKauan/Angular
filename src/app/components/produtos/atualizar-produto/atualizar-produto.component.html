@@ -1,4 +1,4 @@
-<h1 class="my-3 text-primary">Cadastrar Mangás</h1>
+<h1 class="my-3 text-primary">Atualizar Produto</h1>
 
 <div class="card shadow">
   <form class="m-3">
@@ -6,8 +6,8 @@
       <div class="col md-12">
 
         <div class="form-group">
-          <label for="nome">Nome do Mangá: </label>
-          <input type="text" name="nomeProduto" class="form-control" placeholder="Digite o nome do Mangá Aqui !"
+          <label for="nome">Nome do Produto: </label>
+          <input type="text" name="nomeProduto" class="form-control" placeholder="Digite o nome do Produto"
             [(ngModel)]="produto.nome" />
         </div>
         <!--.form-group-->
@@ -21,7 +21,7 @@
 
       <div class="col-md-6">
         <div class="form-group">
-          <label for="validadeProduto">Validade do produto: </label>
+          <label for="validadeProduto">Validade do Produto: </label>
           <input type="date" class="form-control" name="validade" placeholder="Validade do Produto"
           [(ngModel)]="produto.validade" />
         </div>
@@ -30,7 +30,7 @@
 
       <div class="col-md-6">
         <div class="form-group">
-          <label for="precoProduto">Preço do Mangá: </label>
+          <label for="precoProduto">Preço do Produto: </label>
           <input type="number" class="form-control" placeholder="0.00" name="preco"
           [(ngModel)]="produto.precoProduto" />
         </div>
