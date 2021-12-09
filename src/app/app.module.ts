@@ -25,6 +25,10 @@ import { AtualizarProdutoComponent } from './components/produtos/atualizar-produ
 
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
+import { PreVendasComponent } from './components/produtos/pre-vendas/pre-vendas.component';
+
+
+
 registerLocaleData(localePt);
 
 @NgModule({
@@ -35,7 +39,8 @@ registerLocaleData(localePt);
     HomeComponent,
     ListarProdutosComponent,
     CadastrarProdutosComponent,
-    AtualizarProdutoComponent
+    AtualizarProdutoComponent,
+    PreVendasComponent
   ],
   imports: [
     BrowserModule,
