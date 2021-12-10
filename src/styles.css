@@ -2,3 +2,27 @@
 .table{
   display: table;
 }
+
+body{
+  background-image: linear-gradient(225deg, #ffd54f 0, #ffc540 16.67%, #ffb22d 33.33%, #f89b10 50%, #ee8400 66.67%, #e66f00 83.33%, #e15c00 100%);
+}
+
+.col{
+  /* background-color: pink; */
+  padding:10px;
+}
+
+
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+.card{
+  background-color: lightsalmon;
+  border-radius: 8px;
+  border-color: lightcoral;
+}
