@@ -2,6 +2,8 @@
 
 <p> Projeto CRUD - Loja de Mangás <i>🉐SeuMangáAqui</i></p>
 
+<p> PWEBII - <i>💻 Programação WEB II</p></i>
+
 <p> Feito por <i>Carlos Kauan Costa de Brito</i></p>
 
 ## <i>🔨Framework usado</i> 
