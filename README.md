@@ -12,7 +12,6 @@
 ## <i>🕹️Executar</i>
 
 <p><code>ng serve -o</code> para executar :) </p>
-<br />
 
 ## <i>🏠Tela Principal</i> 
 <div align="center">
