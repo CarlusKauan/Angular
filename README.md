@@ -18,3 +18,10 @@
   <img src="src/assets/img/PrintSite.png" width="1280"/>
 </div>
 
+<div align="center">
+  <img src="src/assets/img/PrintSite2.png" width="1280"/>
+</div>
+
+<div align="center">
+  <img src="src/assets/img/PrintSite3.png" width="1280"/>
+</div>
