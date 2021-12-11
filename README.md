@@ -22,7 +22,7 @@
 
 <br />
 
-## Tela de Promoções
+## Tela de Pré-vendas
 <div align="center">
   <img src="src/assets/img/PrintSite3.png" width="1280"/>
 </div>
