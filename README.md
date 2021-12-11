@@ -6,7 +6,7 @@
 
 <p> Feito por <i>Carlos Kauan Costa de Brito</i></p>
 
-<p> <i>Framework usado </i> <img align="center" alt="Carlos-angular" height="42" width="40" src="https://raw.githubusercontent.com/angular/angular/master/aio/src/assets/images/logos/angular/angular.png">
+<p> <i>Framework</i> <img align="center" alt="Carlos-angular" height="42" width="40" src="https://raw.githubusercontent.com/angular/angular/master/aio/src/assets/images/logos/angular/angular.png">
  </p> 
 
 ## <i>🕹️Executar</i>
