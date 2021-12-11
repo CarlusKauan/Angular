@@ -14,7 +14,7 @@
 <p><code>ng serve -o</code> para executar :) </p>
 <br />
 
-## Tela Principal 
+## <i>🏠Tela Principal</i> 
 <div align="center">
   <img src="src/assets/img/PrintSite.png" width="1000"/>
   <img src="src/assets/img/PrintSite2.png" width="1000"/>
@@ -22,7 +22,7 @@
 
 <br />
 
-## Tela de Pré-vendas
+## <i>🛍️Tela de Pré-vendas</i>
 <div align="center">
   <img src="src/assets/img/PrintSite3.png" width="1280"/>
 </div>
