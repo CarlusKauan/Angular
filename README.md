@@ -13,15 +13,16 @@
 
 <p><code>ng serve -o</code> para executar :) </p>
 <br />
- 
+
+## Tela Principal 
 <div align="center">
-  <img src="src/assets/img/PrintSite.png" width="1280"/>
+  <img src="src/assets/img/PrintSite.png" width="1000"/>
+  <img src="src/assets/img/PrintSite2.png" width="1000"/>
 </div>
 
-<div align="center">
-  <img src="src/assets/img/PrintSite2.png" width="1280"/>
-</div>
+<br />
 
+## Tela de Promoções
 <div align="center">
   <img src="src/assets/img/PrintSite3.png" width="1280"/>
 </div>
